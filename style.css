@@ -77,7 +77,7 @@ img{
     transform: translate(-50%, -50%);
     object-fit: cover;
     object-position: top;
-    border-radius: 22px;
+    border-radius: 21px;
 }
 #img1{
     transform: translate(-50%, -50%) rotate(-30deg);
