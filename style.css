@@ -33,6 +33,7 @@ html, body{
     padding: 5px 10px;
     border-radius: 50px;
     font-weight: 500;
+    transition: background-color 0.5s ease-in 10ms;
 }
 #nav-part1 i{
     font-size: 17px;
@@ -40,11 +41,26 @@ html, body{
     padding: 5px 10px;
     border-radius: 50px;
     font-weight: 500;
+    transition: background-color 0.5s ease-in 10ms;
+}
+#nav-part1 h2:hover{
+    background-color: black;
+    color: #fff;
+}
+#nav-part1 i:hover{
+    background-color: black;
+    color: #fff;
 }
 #nav-part2 h1{
+    padding: 7px 7px;
+    border-radius: 50px;
     font-weight: 500;
     font-size: 30px;
     text-transform: uppercase;
+    transition: box-shadow 0.3s ease-in-out;
+}
+#nav-part2>h1:hover{
+    box-shadow: 1px 1px 10px black;
 }
 #nav button{
     padding: 7px 12px;
@@ -56,7 +72,6 @@ html, body{
 #btn2{
     background-color: orangered;
     color: #fff;
-    border: none;
 }
 #main>h1{
     font-size: 150px;
@@ -67,6 +82,10 @@ html, body{
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
+    transition: box-shadow 0.5s ease-in-out;
+}
+#main>h1:hover{
+    box-shadow: 2px 2px 25px black;
 }
 img{
     height: 400px;
@@ -77,7 +96,7 @@ img{
     transform: translate(-50%, -50%);
     object-fit: cover;
     object-position: top;
-    border-radius: 21px;
+    border-radius: 22px;
 }
 #img1{
     transform: translate(-50%, -50%) rotate(-30deg);
