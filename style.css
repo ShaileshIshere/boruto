@@ -14,18 +14,18 @@ html, body{
 }
 
 #nav{
-    height: 70px;
+    height: 12vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 40px;
+    padding: 0 1.5em;
 }
 #nav-part1{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: 0.5em;
 }
 #nav-part1 h2{
     font-size: 17px;
@@ -84,9 +84,6 @@ html, body{
     text-align: center;
     transition: box-shadow 0.5s ease-in-out;
 }
-#main>h1:hover{
-    box-shadow: 2px 2px 25px black;
-}
 img{
     height: 400px;
     width: 270px;
@@ -111,26 +108,71 @@ img{
     position: absolute;
     bottom: 5%;
     left: 3%;
-    font-size: 15px;
+    font-size: 1.5em;
 }
 #bottom-right{
     position: absolute;
     bottom: 5%;
     right: 5%;
-    font-size: 24px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#bottom-right j{
-    padding: 7px;
+/* Media Queries for Responsive Design */
+
+/* For tablets screens */
+@media (max-width: 800px) {
+    #nav-part2 h1 {
+        font-size: 2em;
+    }
+
+    #main > h1 {
+        font-size: 5em;
+    }
+
+    img {
+        height: 40vh;
+        width: 25vh;
+    }
+
+    #bottom-left {
+        font-size: 1.5em;
+    }
+
+    #bottom-right {
+        font-size: 1.5em;
+    }
 }
-#bottom-right k{
-    padding: 7px;
-}
-#bottom-right l{
-    padding: 7px;
-}
-#bottom-right>h5{
-    font-size: 20px;
-}
-#main>h5{
-    font-size: 20px;
+
+/* For smaller phones */
+@media (max-width: 450px) {
+    #main > h1 {
+        font-size: 3em;
+    }
+
+    img {
+        height: 25vh;
+        width: 30vw;
+    }
+
+    #nav-part1 h2 {
+        display: none;
+    }
+
+    #nav-part2 h1 {
+        font-size: 1.5em;
+    }
+
+    #nav-part3 #btn2{
+        display: none;
+    }
+
+    #bottom-left {
+        font-size: 0.9em;
+    }
+
+    #bottom-right {
+        font-size: 1em;
+    }
 }
